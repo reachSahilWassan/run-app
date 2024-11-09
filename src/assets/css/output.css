@@ -762,6 +762,14 @@ video {
   height: 2rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -772,6 +780,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .min-w-full {
@@ -816,6 +828,22 @@ video {
   animation: spin 1s linear infinite;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -858,6 +886,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-0 {
@@ -1030,6 +1062,11 @@ video {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1248,6 +1285,14 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.\[animation-delay\:-0\.15s\] {
+  animation-delay: -0.15s;
+}
+
+.\[animation-delay\:-0\.3s\] {
+  animation-delay: -0.3s;
 }
 
 .before\:absolute::before {
