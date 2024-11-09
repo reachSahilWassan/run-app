@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "name": "Run 1",
+        "status": "Success",
+        "date": "2023-05-01T10:00:00Z",
+        "description": "This is the first run",
+        "duration": 30
+    },
+    {
+        "id": "2",
+        "name": "Run 2",
+        "status": "Failed",
+        "date": "2023-05-02T11:00:00Z",
+        "description": "This is the second run",
+        "duration": 45
+    },
+    {
+        "id": "3",
+        "name": "Run 3",
+        "status": "In Progress",
+        "date": "2023-05-03T12:00:00Z",
+        "description": "This is the third run",
+        "duration": 60
+    },
+    {
+        "id": "4",
+        "name": "Run 4",
+        "status": "Success",
+        "date": "2023-05-04T13:00:00Z",
+        "description": "This is the fourth run",
+        "duration": 40
+    },
+    {
+        "id": "5",
+        "name": "Run 5",
+        "status": "Failed",
+        "date": "2023-05-05T14:00:00Z",
+        "description": "This is the fifth run",
+        "duration": 55
+    },
+    {
+        "id": "6",
+        "name": "Run 6",
+        "status": "Success",
+        "date": "2023-05-06T15:00:00Z",
+        "description": "This is the sixth run",
+        "duration": 35
+    },
+    {
+        "id": "7",
+        "name": "Run 7",
+        "status": "In Progress",
+        "date": "2023-05-07T16:00:00Z",
+        "description": "This is the seventh run",
+        "duration": 50
+    },
+    {
+        "id": "8",
+        "name": "Run 8",
+        "status": "Success",
+        "date": "2023-05-08T17:00:00Z",
+        "description": "This is the eighth run",
+        "duration": 65
+    },
+    {
+        "id": "9",
+        "name": "Run 9",
+        "status": "Failed",
+        "date": "2023-05-09T18:00:00Z",
+        "description": "This is the ninth run",
+        "duration": 70
+    },
+    {
+        "id": "10",
+        "name": "Run 10",
+        "status": "Success",
+        "date": "2023-05-10T19:00:00Z",
+        "description": "This is the tenth run",
+        "duration": 25
+    }
+]
