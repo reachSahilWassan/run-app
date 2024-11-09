@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Frontend Developer Assignment: React Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple dashboard built with React.js and TypeScript, displaying a list of "Runs" and their details.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `src/`
+  - `components/`: React components
+    - `ListPage.tsx`: Displays the list of runs
+    - `DetailsPage.tsx`: Shows details of a single run
+  - `types.ts`: TypeScript interfaces
+  - `App.tsx`: Main application component
+- `public/`
+  - `data/runs.json`: Sample JSON data for runs
+  - `babylon.html`: HTML file for Babylon.js 3D text rendering
 
-## Expanding the ESLint configuration
+## Libraries Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- React Router
+- Babylon.js
+- Tailwind CSS (for styling)
+- Preline
 
-- Configure the top-level `parserOptions` property like this:
+## Setup Instructions
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/reachSahilWassan/run-app.git
+   cd runApp
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Run the development server:
+   ```
+   npm run dev
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Open your browser and navigate to `http://localhost:5173` to view the application.
+
+## Additional Notes
+
+- The application uses sample data stored in `public/data/runs.json`. In a real-world scenario, this would be replaced with API calls.
+- The 3D text rendering is done using Babylon.js in an iframe. The color of the text can be changed using the buttons on the Details page.
